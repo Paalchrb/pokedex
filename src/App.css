@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+* {
+  margin:0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: monospace;
+  background-color: #101010;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  background-color: #101010;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pokeCard {
+  margin: 1rem;
+  border-radius: 160px;
+  height: 200px;
+  width: 200px;
+  padding: 30px;
+  color: white;
+  background-color: #202020;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.75);
+  border: outset 1.5px rgb(34, 34, 34);
+}
+
+header h1 {
+  color: pink;
+  font-size: 8rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+header input {
+  width: 30vw;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header input:focus {
+  outline: none;
 }
